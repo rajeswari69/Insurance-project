@@ -22,7 +22,7 @@ pipeline {
        }    
        stage('Docker image creation') {
          steps {
-           sh 'sudo docker build -t rajeswari123/insuranceproject .'
+           sh 'docker build -t rajeswari123/insuranceproject:latest .'
          }
 
       }
