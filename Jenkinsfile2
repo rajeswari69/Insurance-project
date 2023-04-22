@@ -1,0 +1,18 @@
+pipeline {
+  agent any {
+    tools {
+         maven 'M2_HOME'
+    }
+  stages {
+    stage('Checkout the project') {
+       steps {
+         git branch:'main', url:'https://github.com/rajeswari69/Insurance-project.git'
+       }
+    }
+    stage('package the application') {
+       steps {
+         sh 'mvn clean package'
+       }
+    }
+  }
+}
