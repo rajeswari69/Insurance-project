@@ -16,10 +16,10 @@ public class Insuremetests {
 		  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
 
 		  ChromeOptions chromeoptions = new ChromeOptions();
-		  chromeoptions.addArguments("--headless");
-		  chromeoptions.addArguments("--no-sandbox");
-		  chromeoptions.addArguments("--disable-dev-shm-usage");
-		  chromeoptions.addArguments("--remote-allow-origins=*");
+		//  chromeoptions.addArguments("--headless");
+		  //chromeoptions.addArguments("--no-sandbox");
+		 // chromeoptions.addArguments("--disable-dev-shm-usage");
+		 chromeoptions.addArguments("--remote-allow-origins=*");
 		  //WebDriverManager.chromedriver().setup();
 		  WebDriver driver = new ChromeDriver(chromeoptions);
 		  driver.get("http://15.207.113.135:8084/contact.html");
