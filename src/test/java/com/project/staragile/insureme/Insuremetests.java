@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 
-import io.github.bonigarcia.wdm.WebDriverManager;
+//import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class Insuremetests {
 
@@ -20,7 +20,7 @@ public class Insuremetests {
 		  chromeoptions.addArguments("--no-sandbox");
 		  chromeoptions.addArguments("--disable-dev-shm-usage");
 		  chromeoptions.addArguments("--remote-allow-origins=*");
-		  WebDriverManager.chromedriver().setup();
+		  //WebDriverManager.chromedriver().setup();
 		  WebDriver driver = new ChromeDriver(chromeoptions);
 		  driver.get("http://15.207.113.135:8084/contact.html");
 		  driver.manage().window().maximize();
