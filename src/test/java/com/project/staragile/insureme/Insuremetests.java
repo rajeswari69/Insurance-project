@@ -12,11 +12,14 @@ public class Insuremetests {
 	public static void main(String[] args){
 		// TODO Auto-generated method stub
 		 System.out.println("Welcome");
-		  System.setProperty("webdriver.chrome.driver","C:\\Users\\Bizzflo\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		  //System.setProperty("webdriver.chrome.driver","C:\\Users\\Bizzflo\\Downloads\\chromedriver_win32\\chromedriver.exe");
+		  System.setProperty("webdriver.chrome.driver","/usr/bin/chromedriver");
+
 		  ChromeOptions chromeoptions = new ChromeOptions();
 		  chromeoptions.addArguments("--headless");
 		  chromeoptions.addArguments("--no-sandbox");
 		  chromeoptions.addArguments("--disable-dev-shm-usage");
+		  chromeoptions.addArguments("--remote-allow-origins=*");
 		  WebDriverManager.chromedriver().setup();
 		  WebDriver driver = new ChromeDriver(chromeoptions);
 		  driver.get("http://15.207.113.135:8084/contact.html");
